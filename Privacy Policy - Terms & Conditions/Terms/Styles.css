@@ -1,0 +1,73 @@
+.legal {
+    position: relative;
+    padding: 4rem 2rem;
+    margin: 4rem auto;
+    max-width: 900px;
+    border-radius: 20px;
+    color: white;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(6px);
+}
+
+.legal-content {
+    position: relative;
+    z-index: 2;
+}
+
+.legal h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0 1rem;
+    background: linear-gradient(90deg, #ffffff, #61dafb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.legal p,
+.legal ul {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.legal ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.legal ul li::before {
+    content: "✔️ ";
+    color: #61dafb;
+    margin-right: 0.5rem;
+}
+
+
+/* Steam Wave Background */
+
+.steam-wave::before,
+.steam-wave::after {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, #61dafb33, transparent 70%);
+    animation: steamMove 20s linear infinite;
+    z-index: 0;
+    opacity: 0.2;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.steam-wave::after {
+    animation-delay: 10s;
+}
+
+@keyframes steamMove {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
