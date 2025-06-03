@@ -20,31 +20,90 @@
             <button class="filter-btn" data-filter="dark">Dark</button>
         </div>
 
-        <!-- Gallery Grid -->
         <div class="gallery">
-            <div class="card" data-category="desktop">
-                <img src="wallpapers//Desktop/Desktop (1).jpg" alt="Desktop">
-                <a href="wallpapers/Desktop/Desktop (1).jpg" download class="btn">Download</a>
+            <!-- Main Thumbnail Card -->
+            <div class="card category" onclick="showSection('desktop')">
+                <img src="wallpapers/Desktop/Desktop (3).jpg" alt="Desktop">
+                <p>Desktop</p>
             </div>
-            <div class="card" data-category="Live Wallpaper">
-                <img src="wallpapers/Video Wallpapers/Video Wallpaper Pre-view GIF/Live Wallpaper.gif" alt="Live Wallpaper">
-                <a href="wallpapers/Video Wallpapers/live wallpaper.mp4" download class="btn">Download</a>
-            </div>
-            <div class="card" data-category="anime">
-                <img src="wallpapers/Anime/Anime (1).jpg" alt="Anime">
-                <a href="wallpapers/Anime/Anime (1).jpg" download class="btn">Download</a>
-            </div>
-            <div class="card" data-category="dark">
-                <img src="wallpapers/Dark/Dark (1).jpg" alt="Dark">
-                <a href="wallpapers/Dark/Dark (1).jpg" download class="btn">Download</a>
-            </div>
-            <!-- Add more cards with proper data-category -->
-        </div>
-    </div>
 
+            <div class="card category" onclick="showSection('anime')">
+                <img src="wallpapers/Anime/Anime (2).jpg" alt="Anime">
+                <p>Anime</p>
+            </div>
+
+            <!-- Add more categories -->
+        </div>
+
+        <!-- Hidden Sub-Gallery Sections -->
+        <div id="desktop" class="sub-gallery hidden">
+            <h2>Desktop Wallpapers</h2>
+            <div class="gallery">
+                <div class="card"><img src="wallpapers/Desktop/Desktop (1).jpg"><a download href="wallpapers/Desktop/Desktop (1).jpg" class="btn">Download</a></div>
+                <div class="card"><img src="wallpapers/Desktop/Desktop (2).jpg"><a download href="wallpapers/Desktop/Desktop (2).jpg" class="btn">Download</a></div>
+            </div>
+        </div>
+
+        <div id="abstract" class="sub-gallery hidden">
+            <h2>Anime Wallpapers</h2>
+            <div class="gallery">
+                <div class="card"><img src="wallpapers/Anime/Anime (1).jpg"><a download href="wallpapers/Anime/Anime (1).jpg" class="btn">Download</a></div>
+                <div class="card"><img src="wallpapers/Anime/Anime (3).jpg"><a download href="wallpapers/Anime/Anime (3).jpg" class="btn">Download</a></div>
+            </div>
+        </div>
+
+        <div id="dark" class="sub-gallery hidden">
+            <h2>Dark Wallpapers</h2>
+            <div class="gallery">
+                <div class="card"><img src="wallpapers/Dark/Dark (1).jpg"><a download href="wallpapers/Dark/Dark (1).jpg" class="btn">Download</a></div>
+                <div class="card"><img src="wallpapers/Dark/Dark (2).jpg"><a download href="wallpapers/Dark/Dark (2).jpg" class="btn">Download</a></div>
+            </div>
+        </div>
+        <div id="live-wallpaper" class="sub-gallery hidden">
+            <h2>Live Wallpapers</h2>
+            <div class="gallery">
+                <div class="card"><img src="wallpapers/Video Wallpapers/Video Wallpaper Pre-view GIF/Live Wallpaper.gif"><a download href="wallpapers/Video Wallpapers/live wallpaper.mp4" class="btn">Download</a></div>
+                <div class="card"><img src="wallpapers/Video Wallpapers/Video Wallpaper Pre-view GIF/Live Wallpaper.gif"><a download href="wallpapers/Video Wallpapers/live wallpaper.mp4" class="btn">Download</a></div>
+            </div>
+        </div>
+
+        <!-- Add more cards with proper data-category -->
+    </div>
+    </div>
+    <!-- Footer -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2025 FarBri Wallpapers. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/iamfardinsk00" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/itsmefardin" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/iamfardinsk" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/iamfardinsk" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-6 text-md-end">
+                <ul class="footer-links">
+                    <li><a href="About ME/aboutme.html">About</a></li>
+
+                    <li><a href="About ME/aboutme.html">Contact</a></li>
+                    <li><a href="Privacy Policy - Terms & Conditions/privacy.html">Privacy</a></li>
+                    <li><a href="Privacy Policy - Terms & Conditions/Terms/terms.html">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Custom JavaScript -->
     <script src="script.js"></script>
     <!-- Add more cards as needed -->
-    </div>
+
     </div>
 </body>
 
