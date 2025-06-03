@@ -1,29 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Modern Wallpaper Gallery</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Wallpaper Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <div class="container">
-    <h1>🌌 FarBri Wallpapers</h1>
-    <div class="gallery">
-      <div class="card">
-        <img src="wallpapers/instagram-1745611003815.jpg" alt="Wallpaper 1">
-        <a href="wallpapers/instagram-1745611003815.jpg" download class="btn">Download</a>
-      </div>
-      <div class="card">
-        <img src="wallpapers/instagram-1745873288466.jpg" alt="Wallpaper 2">
-        <a href="wallpapers/instagram-1745873288466.jpg" download class="btn">Download</a>
-      </div>
-      <div class="card">
-        <img src="wallpapers/instagram-1745873288666.jpg" alt="Wallpaper 3">
-        <a href="wallpapers/instagram-1745873288666.jpg" download class="btn">Download</a>
-      </div>
-      <!-- Add more cards as needed -->
+    <div class="container">
+        <h1>🌌 FarBri Wallpapers</h1>
+        <!-- Filter Tags -->
+        <div class="filter-bar">
+            <button class="filter-btn" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="desktop">Desktop</button>
+            <button class="filter-btn" data-filter="abstract">Live Wallapper</button>
+            <button class="filter-btn" data-filter="anime">Anime</button>
+            <button class="filter-btn" data-filter="dark">Dark</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery">
+            <div class="card" data-category="desktop">
+                <img src="wallpapers//Desktop/Desktop (1).jpg" alt="Desktop">
+                <a href="wallpapers/Desktop/Desktop (1).jpg" download class="btn">Download</a>
+            </div>
+            <div class="card" data-category="Live Wallpaper">
+                <img src="wallpapers/Video Wallpapers/Video Wallpaper Pre-view GIF/Live Wallpaper.gif" alt="Live Wallpaper">
+                <a href="wallpapers/Video Wallpapers/live wallpaper.mp4" download class="btn">Download</a>
+            </div>
+            <div class="card" data-category="anime">
+                <img src="wallpapers/Anime/Anime (1).jpg" alt="Anime">
+                <a href="wallpapers/Anime/Anime (1).jpg" download class="btn">Download</a>
+            </div>
+            <div class="card" data-category="dark">
+                <img src="wallpapers/Dark/Dark (1).jpg" alt="Dark">
+                <a href="wallpapers/Dark/Dark (1).jpg" download class="btn">Download</a>
+            </div>
+            <!-- Add more cards with proper data-category -->
+        </div>
     </div>
-  </div>
+
+    <script src="script.js"></script>
+    <!-- Add more cards as needed -->
+    </div>
+    </div>
 </body>
+
 </html>
